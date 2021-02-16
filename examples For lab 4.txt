@@ -1,0 +1,48 @@
+Here's the output:
+
+---
+
+
+runFull "declarative" "Sem1.txt" "Sem1.out"
+Store : ((15, 12), 2), 
+((14, 13, 11, 10, 8), 1), 
+((9), pair(1:10 2:11)), 
+((1), Primitive Operation), 
+((2), Primitive Operation), 
+((3), Primitive Operation), 
+((4), Primitive Operation), 
+((5), Primitive Operation), 
+((6), Primitive Operation), 
+((7), Primitive Operation)
+
+Mutable Store: Empty
+Current Environment : ("S" -> 12, "Z" -> 10, "W" -> 11, "Y" -> 9, "X" -> 8, "IntPlus" -> 1, "IntMinus" -> 2, "Eq" -> 3, "GT" -> 4, "LT" -> 5, "Mod" -> 6, "IntMultiply" -> 7)
+Stack : ""
+---
+so 1-7 look like they're reserved for labels for the basic functions, like EQ, GT, etc
+From Jacob Shelton to Everyone:  11:16 AM
+the other variables are made as needed, so X is the next thing that gets made, it's given address 8
+the value of 1 is stored within 8 and i think that's in the second line but i'm not sure
+Y is given the address at 9, z 10, w 11, s 12
+idk
+
+it might be the final pop
+or the call to skip full or whatever
+maybe
+this feels like overcomplicated asm 
+15 might be the final pop
+or the call to skip full or whatever
+maybe
+this feels like overcomplicated asm 
+((9), pair(1:10 2:11)),  looks like Y = pair(1:X 2:X)
+I don't know where subtraction is either
+it looks like that
+so it might be that that's the value it pops
+yeah i'm not sure
+it's probably something like that
+in Sem2, it gives a result that X = 4. And the top most line in store is ( (...), 4)
+yeah i'm not sure
+it's probably something like that
+in Sem2, it gives a result that X = 4. And the top most line in store is ( (...), 4)
+so ( (variables operated over), Result)
+in which case i still don't know what 15 is but it and S result in 2
